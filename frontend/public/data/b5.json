@@ -1,0 +1,12 @@
+[
+    {
+        "type": "section",
+        "sectionTitle": "老年人能力总得分"
+    },
+    {
+      "id": "B.5",
+      "title": "老年人能力总得分",
+      "type": "text",
+      "suffixText": "请输入总得分"
+    }
+  ]

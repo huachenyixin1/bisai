@@ -1,0 +1,37 @@
+[
+    {
+      "type": "section",
+      "sectionTitle": "老年人体验特点及护理评估"
+    },
+    {
+      "id": "A.3.1",
+      "title": "信息提供者",
+      "type": "text",
+      "suffixText": "请输入信息提供者姓名"
+    },
+    {
+      "id": "A.3.2",
+      "title": "信息提供者与老年人的关系",
+      "type": "checkbox",
+      "options": [
+        { "value": "本人", "label": "本人" },
+        { "value": "配偶", "label": "配偶" },
+        { "value": "子女", "label": "子女" },
+        { "value": "其他亲属", "label": "其他亲属" },
+        { "value": "雇佣护理工作者", "label": "雇佣护理工作者" },
+        { "value": "其他", "label": "其他 __________" }
+      ]
+    },
+    {
+      "id": "A.3.3",
+      "title": "联系人姓名",
+      "type": "text",
+      "suffixText": "请输入联系人姓名"
+    },
+    {
+      "id": "A.3.4",
+      "title": "联系人电话",
+      "type": "text",
+      "suffixText": "请输入联系人电话"
+    }
+  ]

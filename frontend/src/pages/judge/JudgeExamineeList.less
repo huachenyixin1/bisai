@@ -1,0 +1,102 @@
+// 定义变量，与 JudgeExamineeList.less 保持一致
+@primary-color: #1a73e8;
+@text-color: #202124;
+@bg-color: #F9F8F6;
+@table-bg: #ffffff;
+@table-header-bg: #f5f5f5;
+@border-color: #e0e0e0;
+
+.examinee-scores-container {
+  background-color: @bg-color;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // 头部样式
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+
+    .user-info {
+      cursor: pointer;
+    }
+  }
+
+  // 主容器
+  .container {
+    max-width: 900px; // 比 JudgeExamineeList 稍宽以适应更多列
+    width: 100%;
+    padding: 0 20px;
+
+    h2 {
+      font-size: 28px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: @text-color;
+    }
+
+    // 表格容器
+    .table-container {
+      background-color: @table-bg;
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      overflow-x: auto; // 支持横向滚动以适应更多列
+
+      .scores-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        .ant-table-thead > tr > th {
+          background-color: @table-header-bg;
+          font-weight: 500;
+          padding: 12px 16px;
+          text-align: center;
+          border-bottom: 1px solid @border-color;
+          font-size: 14px;
+          color: @text-color;
+        }
+
+        .ant-table-tbody > tr > td {
+          padding: 12px 16px;
+          text-align: center;
+          border-bottom: 1px solid @border-color;
+          font-size: 14px;
+          color: @text-color;
+        }
+
+        .ant-table-tbody > tr:hover > td {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+
+  // 响应式设计
+  @media (max-width: 768px) {
+    padding: 10px;
+
+    .container {
+      padding: 0 10px;
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    .table-container {
+      .scores-table {
+        .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td {
+          padding: 8px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

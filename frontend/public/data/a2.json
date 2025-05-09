@@ -1,0 +1,207 @@
+[
+    {
+      "type": "section",
+      "sectionTitle": "评估对象基本信息"
+    },
+    {
+      "id": "A.2.1",
+      "title": "姓名",
+      "type": "text",
+      "suffixText": "请输入姓名"
+    },
+    {
+      "id": "A.2.2",
+      "title": "性别",
+      "type": "radio",
+      "options": [
+        { "value": "男", "label": "男" },
+        { "value": "女", "label": "女" }
+      ]
+    },
+    {
+      "id": "A.2.3",
+      "title": "出生日期",
+      "type": "date",
+      "suffixText": "请选择日期（格式：YYYY年MM月DD日）"
+    },
+    {
+      "id": "A.2.4",
+      "title": "身高",
+      "type": "text",
+      "suffix": "cm",
+      "suffixText": "请输入身高"
+    },
+    {
+      "id": "A.2.5",
+      "title": "体重",
+      "type": "text",
+      "suffix": "kg",
+      "suffixText": "请输入体重"
+    },
+    {
+      "id": "A.2.6",
+      "title": "民族",
+      "type": "radio",
+      "options": [
+        { "value": "汉族", "label": "汉族" },
+        { "value": "少数民族", "label": "少数民族" }
+      ],
+      "subField": {
+        "id": "A.2.6.sub",
+        "title": "请输入民族",
+        "type": "text",
+        "visibleWhen": { "A.2.6": "少数民族" }
+      }
+    },
+    {
+      "id": "A.2.7",
+      "title": "宗教信仰",
+      "type": "radio",
+      "options": [
+        { "value": "无", "label": "无" },
+        { "value": "有", "label": "有" }
+      ],
+      "subField": {
+        "id": "A.2.7.sub",
+        "title": "请输入宗教信仰",
+        "type": "text",
+        "visibleWhen": { "A.2.7": "有" }
+      }
+    },
+    {
+      "id": "A.2.8",
+      "title": "公民身份号码",
+      "type": "text",
+      "suffixText": "请输入公民身份号码"
+    },
+    {
+      "id": "A.2.9",
+      "title": "文化程度",
+      "type": "radio",
+      "options": [
+        { "value": "文盲", "label": "文盲" },
+        { "value": "小学", "label": "小学" },
+        { "value": "初中", "label": "初中" },
+        { "value": "高中/技校/中专", "label": "高中/技校/中专" },
+        { "value": "大学专科及以上", "label": "大学专科及以上" },
+        { "value": "不详", "label": "不详" }
+      ]
+    },
+    {
+      "id": "A.2.10",
+      "title": "居住情况 (多选)",
+      "type": "checkbox",
+      "options": [
+        { "value": "独居", "label": "独居" },
+        { "value": "与配偶居住", "label": "与配偶居住" },
+        { "value": "与子女居住", "label": "与子女居住" },
+        { "value": "与父母居住", "label": "与父母居住" },
+        { "value": "与兄弟姐妹居住", "label": "与兄弟姐妹居住" },
+        { "value": "与其他亲属居住", "label": "与其他亲属居住" },
+        { "value": "与非亲属关系的人居住", "label": "与非亲属关系的人居住" },
+        { "value": "养老机构", "label": "养老机构" }
+      ]
+    },
+    {
+      "id": "A.2.11",
+      "title": "婚姻状况",
+      "type": "radio",
+      "options": [
+        { "value": "未婚", "label": "未婚" },
+        { "value": "已婚", "label": "已婚" },
+        { "value": "丧偶", "label": "丧偶" },
+        { "value": "离婚", "label": "离婚" },
+        { "value": "未说明", "label": "未说明" }
+      ]
+    },
+    {
+      "id": "A.2.12",
+      "title": "医疗费用支付方式 (多选)",
+      "type": "checkbox",
+      "options": [
+        { "value": "城镇职工基本医疗保险", "label": "城镇职工基本医疗保险" },
+        { "value": "城乡居民基本医疗保险", "label": "城乡居民基本医疗保险" },
+        { "value": "自费", "label": "自费" },
+        { "value": "公务员补助", "label": "公务员补助" },
+        { "value": "企业补充保险", "label": "企业补充保险" },
+        { "value": "公费医疗及医疗照顾对象", "label": "公费医疗及医疗照顾对象" },
+        { "value": "医疗救助", "label": "医疗救助" },
+        { "value": "大病保险", "label": "大病保险" }
+      ]
+    },
+    {
+      "id": "A.2.13",
+      "title": "经济来源 (多选)",
+      "type": "checkbox",
+      "options": [
+        { "value": "退休金/养老金", "label": "退休金/养老金" },
+        { "value": "子女补贴", "label": "子女补贴" },
+        { "value": "亲友资助", "label": "亲友资助" },
+        { "value": "国家普惠型补贴", "label": "国家普惠型补贴" },
+        { "value": "个人储蓄", "label": "个人储蓄" },
+        { "value": "其他补贴", "label": "其他补贴" }
+      ]
+    },
+    {
+      "id": "A.2.14",
+      "title": "近 30 天内照护风险事件",
+      "type": "section",
+      "subQuestions": [
+        {
+          "id": "A.2.14.1",
+          "title": "跌倒",
+          "type": "radio",
+          "options": [
+            { "value": "无", "label": "无" },
+            { "value": "发生过 1 次", "label": "发生过 1 次" },
+            { "value": "发生过 2 次", "label": "发生过 2 次" },
+            { "value": "发生过 3 次及以上", "label": "发生过 3 次及以上" }
+          ]
+        },
+        {
+          "id": "A.2.14.2",
+          "title": "走失",
+          "type": "radio",
+          "options": [
+            { "value": "无", "label": "无" },
+            { "value": "发生过 1 次", "label": "发生过 1 次" },
+            { "value": "发生过 2 次", "label": "发生过 2 次" },
+            { "value": "发生过 3 次及以上", "label": "发生过 3 次及以上" }
+          ]
+        },
+        {
+          "id": "A.2.14.3",
+          "title": "噎食",
+          "type": "radio",
+          "options": [
+            { "value": "无", "label": "无" },
+            { "value": "发生过 1 次", "label": "发生过 1 次" },
+            { "value": "发生过 2 次", "label": "发生过 2 次" },
+            { "value": "发生过 3 次及以上", "label": "发生过 3 次及以上" }
+          ]
+        },
+        {
+          "id": "A.2.14.4",
+          "title": "自杀、自伤",
+          "type": "radio",
+          "options": [
+            { "value": "无", "label": "无" },
+            { "value": "发生过 1 次", "label": "发生过 1 次" },
+            { "value": "发生过 2 次", "label": "发生过 2 次" },
+            { "value": "发生过 3 次及以上", "label": "发生过 3 次及以上" }
+          ]
+        },
+        {
+          "id": "A.2.14.5",
+          "title": "其他",
+          "type": "radio",
+          "options": [
+            { "value": "无", "label": "无" },
+            { "value": "发生过 1 次", "label": "发生过 1 次" },
+            { "value": "发生过 2 次", "label": "发生过 2 次" },
+            { "value": "发生过 3 次及以上", "label": "发生过 3 次及以上" }
+          ]
+        }
+      ]
+    }
+  ]

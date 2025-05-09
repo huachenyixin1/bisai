@@ -1,0 +1,139 @@
+.form-card {
+    max-width: 800px !important; /* 提高优先级 */
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+
+    .ant-card-body {
+        padding: 24px;
+        padding-top: 36px !important;
+    }
+}
+
+/* 确保 Content 不干扰宽度 */
+.ant-layout-content {
+    max-width: none !important; /* 移除 Ant Design 的默认宽度限制 */
+}
+
+.compact-form {
+    .ant-form-item {
+        display: block !important;
+        margin-bottom: 12px !important;
+
+        &-label {
+            text-align: left;
+            padding-bottom: 4px !important;
+            padding-right: 12px !important;
+
+            > label {
+                color: #333;
+                font-size: 16px;
+                white-space: nowrap;
+
+                &::after {
+                    content: none !important;
+                }
+            }
+        }
+
+        &-control {
+            min-width: 0;
+        }
+    }
+
+    .inline-section {
+        display: block;
+    }
+
+    .inline-item {
+        display: flex !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        margin-bottom: 12px !important;
+
+        .ant-form-item-label {
+            flex: 0 0 auto !important;
+            padding-right: 12px !important;
+            padding-bottom: 0 !important;
+            line-height: 1.5 !important;
+        }
+
+        .ant-form-item-control {
+            flex: 1 !important;
+            display: flex !important;
+            align-items: center !important;
+            line-height: 1.5 !important;
+        }
+    }
+
+    .option-item {
+        margin-bottom: 12px !important;
+
+        .question-content {
+            padding-left: 16px;
+        }
+    }
+
+    .a3-item, .a4-item, .a5-item, .b1-item, .b2-item, .b3-item, .b4-item, .b5-item {
+        .question-content {
+            padding-left: 16px;
+        }
+    }
+}
+
+.underline-input {
+    border: none !important;
+    border-bottom: 1px solid #d9d9d9 !important;
+    border-radius: 0 !important;
+    padding: 0 4px !important;
+    box-shadow: none !important;
+    position: relative;
+
+    &::placeholder {
+        color: #bfbfbf;
+        opacity: 1;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+        border-color: #1890ff !important;
+    }
+}
+
+.compact-date-picker {
+    .ant-picker-input > input {
+        padding: 0 4px !important;
+        border: none !important;
+        border-bottom: 1px solid #d9d9d9 !important;
+        border-radius: 0 !important;
+
+        &::placeholder {
+            color: #bfbfbf;
+            opacity: 1;
+        }
+    }
+
+    .ant-picker-suffix {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .compact-form {
+        .inline-item {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+
+            .ant-form-item-label {
+                flex: none !important;
+                width: 100%;
+                margin-bottom: 4px;
+                padding-bottom: 4px !important;
+            }
+        }
+
+        .form-card {
+            margin: 0 16px;
+        }
+    }
+}
